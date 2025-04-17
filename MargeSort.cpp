@@ -33,15 +33,22 @@ void input(){
 void margesort (int low, int high){
     //step 1
     if (low >= high ){
-        return; //steph 1.a
+        return; //step 1.a
     }
 
-    int mid = (low + high ) / 2; //Steph 2
+    int mid = (low + high ) / 2; //Step 2
 
-    //Steph 3
+    //Step 3
     
-margesort(low, mid); //Steph 3.a
-margesort(mid + 1,high); //Steph 3.b
+margesort(low, mid); //Step 3.a
+margesort(mid + 1,high); //Step 3.b
+
+//Step 4
+int i, j;
+i = low; //step 4.a
+j = mid; //step 4.b
+
+int k = low; //step 4.c
 
 
 
