@@ -27,5 +27,12 @@ void input(){
         cin >> arr[i];
     }
 
+}
 
+void output() {
+    cout << "\nData Setelah diurutkan (Mergesort) : ";
+    for (int i = 0; i < n; i++ ){
+        cout << arr [i] << " ";
+    }
+    cout <<endl;
 }
