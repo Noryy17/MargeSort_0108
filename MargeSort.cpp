@@ -30,7 +30,7 @@ void input(){
 }
 
 //Membuat Fungsi MargeSort
-void margesort (int low, int high){
+void mergesort (int low, int high){
     //step 1
     if (low >= high ){
         return; //step 1.a
@@ -40,8 +40,8 @@ void margesort (int low, int high){
 
     //Step 3
     
-margesort(low, mid); //Step 3.a
-margesort(mid + 1,high); //Step 3.b
+mergesort(low, mid); //Step 3.a
+mergesort(mid + 1,high); //Step 3.b
 
 //Step 4
 int i, j;
@@ -72,7 +72,13 @@ while(j <= high){
 while (i<= mid){
     B[k] = arr[i];
     i++;
+    k++;
 }
+
+    // Memindahkan elemen hasil penggabungan kembali ke array utama
+    for (int y = low; y <= high; y++) {
+        arr[y] = B[y];
+    }
 
 }
 
@@ -83,4 +89,12 @@ void output() {
     }
     cout <<endl;
 }
+
+// Fungsi utama untuk menjalankan program
+int main() {
+    input();            // Memasukkan data ke array
+    mergesort(0, n - 1); // Melakukan pengurutan menggunakan Merge Sort
+    output();           // Menampilkan hasil akhir
+}
+
 
