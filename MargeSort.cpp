@@ -54,10 +54,25 @@ while(i <= mid && j <= high) { //Step 4.d
     if(arr[i] <= arr[j]) {   //Step 4.d.i
         B[k] = arr[i];
         i++;
+    } else {
+        B[k] = arr[j];
+        j++;
     }
+    k++; //step 4.d.ii
 }
 
+//step4.e
+while(j <= high){
+    B[k] = arr[j];
+    j++;
+    k++;
+}
 
+//step4.f
+while (i<= mid){
+    B[k] = arr[i];
+    i++;
+}
 
 }
 
