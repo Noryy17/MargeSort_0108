@@ -36,6 +36,9 @@ void margesort (int low, int high){
         return; //steph 1.a
     }
 
+    int mid = (low + high ) / 2; //Steph 2
+    
+
 }
 
 void output() {
