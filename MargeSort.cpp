@@ -29,6 +29,15 @@ void input(){
 
 }
 
+//Membuat Fungsi MargeSort
+void margesort (int low, int high){
+    //step 1
+    if (low >= high ){
+        return; //steph 1.a
+    }
+
+}
+
 void output() {
     cout << "\nData Setelah diurutkan (Mergesort) : ";
     for (int i = 0; i < n; i++ ){
@@ -36,3 +45,4 @@ void output() {
     }
     cout <<endl;
 }
+
