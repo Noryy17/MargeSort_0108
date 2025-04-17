@@ -50,6 +50,13 @@ j = mid; //step 4.b
 
 int k = low; //step 4.c
 
+while(i <= mid && j <= high) { //Step 4.d
+    if(arr[i] <= arr[j]) {   //Step 4.d.i
+        B[k] = arr[i];
+        i++;
+    }
+}
+
 
 
 }
