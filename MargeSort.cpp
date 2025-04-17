@@ -37,7 +37,13 @@ void margesort (int low, int high){
     }
 
     int mid = (low + high ) / 2; //Steph 2
+
+    //Steph 3
     
+margesort(low, mid); //Steph 3.a
+margesort(mid + 1,high); //Steph 3.b
+
+
 
 }
 
